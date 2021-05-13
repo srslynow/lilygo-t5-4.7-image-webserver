@@ -14,7 +14,7 @@ def resize(img, max_width, max_height):
         img = cv2.resize(img, (target_width, max_height))
     else:
         # we can do max height
-        target_height = int(max_width * ratio)
+        target_height = int(max_width / ratio)
         if target_height % 2 == 1:
             target_height = target_height + 1
         img = cv2.resize(img, (max_width, target_height))
