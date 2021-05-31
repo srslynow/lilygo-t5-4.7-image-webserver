@@ -43,5 +43,5 @@ def prepare_image(img):
     # pack two pixels per byte
     img4 = np.empty((img3.shape[0] // 2,), np.uint8)
     for i in range(0, img3.shape[0], 2):
-        img4[i // 2] = img3[i] << 4 | img3[i + 1]
+        img4[i // 2] = img3[i+1] << 4 | img3[i]
     return img4, img2.shape[1], img2.shape[0]
