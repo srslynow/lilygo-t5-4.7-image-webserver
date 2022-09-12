@@ -9,8 +9,8 @@
 
 const char* api_url = "http://192.168.50.3:12345/image";
 
-const char* ssid     = "Never gonna give you up";
-const char* password = "HMLKAQLU";
+const char* ssid     = "your wifi network name";
+const char* password = "your password";
 
 // how long we'll sleep (minutes)
 long SleepDuration   = 0;
